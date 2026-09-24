@@ -1,0 +1,11 @@
+# Config file dedicated to the user's personal history shared between all exegol containers
+resetws
+ws
+wsu
+wsd
+wso
+wst
+get-tool
+server -p 80 -d /workspace/uploads
+listen 8888
+listen 9999 --nc
