@@ -20,3 +20,8 @@ curl -Lo /tmp/eza.tar.gz "https://github.com/eza-community/eza/releases/download
 tar -xzf /tmp/eza.tar.gz -C /tmp
 sudo install -m 755 /tmp/eza /usr/local/bin/eza
 rm -f /tmp/eza.tar.gz /tmp/eza
+
+pipx uninstall exegol-history
+pipx install --system-site-packages /opt/tools/Exegol-history/
+
+cd /opt/tools/ && git clone https://github.com/ned0x1/kudzu.git && pip install -e ./kudzu
